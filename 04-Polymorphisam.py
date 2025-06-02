@@ -15,9 +15,11 @@ class Car:
          return "Disal or Petrol"
    
 class ElectricCar(Car):
+     total_car=0
      def __init__(self,brand,model,battery_size):
          super().__init__(brand,model)
          self.__battery_size=battery_size
+         ElectricCar.total_car+=1
 
      def fule_type(self):
          return "Electric"
@@ -37,4 +39,5 @@ print(my_electriCar.get_brand())
 print(my_electriCar.get_model())
 print(my_electriCar.full_name())
 print(ElectricCar.total_car)
+print(Car.total_car)
 # print(my_car.__brand)  it will show AttributeError : 'Car' object has no attribute '__brand'
