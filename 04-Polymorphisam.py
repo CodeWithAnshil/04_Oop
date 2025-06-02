@@ -1,7 +1,9 @@
 class Car:
+   total_car=0
    def __init__(self,brand,model):
        self.__brand=brand
        self.__model=model
+       Car.total_car+=1
    def full_name(self):
        return f"{self.__brand} {self.__model}"
               
@@ -34,4 +36,5 @@ print(my_electriCar.fule_type())
 print(my_electriCar.get_brand())
 print(my_electriCar.get_model())
 print(my_electriCar.full_name())
+print(ElectricCar.total_car)
 # print(my_car.__brand)  it will show AttributeError : 'Car' object has no attribute '__brand'
