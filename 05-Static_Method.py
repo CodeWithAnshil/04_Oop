@@ -29,22 +29,10 @@ class ElectricCar(Car):
          return "Electric"
     
    
-
-
 my_car=Car("Toyota","Corolla")
 Car("Rang Rover","Defendar")
 my_electriCar=ElectricCar("Tesla","model S","88kwh")
 
-# print(my_car.get_brand())
-# print(my_car.get_model())
-# print(my_car.full_name())
-# print(my_car.fule_type())
-# print("----------------------------------")
-# print(my_electriCar.fule_type())
-# print(my_electriCar.get_brand())
-# print(my_electriCar.get_model())
-# print(my_electriCar.full_name())
-# print(ElectricCar.total_car)
-# print(Car.total_car)
+
 print(Car.general_info())
-# print(my_car.__brand)  it will show AttributeError : 'Car' object has no attribute '__brand'
+
